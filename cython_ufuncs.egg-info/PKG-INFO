@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: cython-ufuncs
+Version: .1
+Summary: Cython utilities for building numpy ufuncs.
+Home-page: UNKNOWN
+Author: John Salvatier
+Author-email: jsalvati@u.washington.edu
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Cython
+Classifier: Topic :: Scientific/Engineering
+Requires: NumPy (>=1.3)
