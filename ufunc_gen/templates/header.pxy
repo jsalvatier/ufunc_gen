@@ -1,10 +1,13 @@
-#macro header()
+#macro header(includes)
 
 import numpy as np
 cimport numpy as np
 cimport cython
 from special cimport * 
 
+#for I in includes
+from {{I}} cimport *
+#endfor
 
 np.import_ufunc()
 np.import_array()

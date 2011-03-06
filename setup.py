@@ -2,9 +2,9 @@ from setuptools import setup
 setup(
       name = 'ufunc_gen',
       version=".2",
-      description="Cython utilities for building numpy ufuncs.",
+      description="Code generation utility for creating UFuncs.",
       author="John Salvatier",
-      author_email="jsalvati@u.washington.edu",
+      author_email="jsalvatier@gmail.com",
       url="",
       license="BSD",
       classifiers=[
@@ -16,7 +16,7 @@ setup(
         'Programming Language :: Cython',
         'Topic :: Scientific/Engineering',
          ],
-      requires=['NumPy (>=1.3)',],
+      requires=['jinja2',],
       long_description="",
       packages = ['ufunc_gen'],
 )
