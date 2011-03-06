@@ -1,8 +1,0 @@
-setup.py
-cython_ufuncs/__init__.py
-cython_ufuncs/generic_loops.py
-cython_ufuncs/utilities.py
-cython_ufuncs.egg-info/PKG-INFO
-cython_ufuncs.egg-info/SOURCES.txt
-cython_ufuncs.egg-info/dependency_links.txt
-cython_ufuncs.egg-info/top_level.txt

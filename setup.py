@@ -1,7 +1,7 @@
 from setuptools import setup
 setup(
-      name = 'cython_ufuncs',
-      version=".1",
+      name = 'ufunc_gen',
+      version=".2",
       description="Cython utilities for building numpy ufuncs.",
       author="John Salvatier",
       author_email="jsalvati@u.washington.edu",
@@ -18,5 +18,5 @@ setup(
          ],
       requires=['NumPy (>=1.3)',],
       long_description="",
-      packages = ['cython_ufuncs'],
+      packages = ['ufunc_gen'],
 )

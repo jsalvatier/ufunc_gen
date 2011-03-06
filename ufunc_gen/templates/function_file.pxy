@@ -1,0 +1,10 @@
+# import "header.pxy" as header
+# import "function.pxy" as function
+
+{{header.header()}}
+
+
+# for f in functions
+{{function.ufunc(f)}}
+
+#endfor

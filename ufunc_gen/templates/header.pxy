@@ -1,0 +1,19 @@
+#macro header()
+
+import numpy as np
+cimport numpy as np
+cimport cython
+from special cimport * 
+
+
+np.import_ufunc()
+np.import_array()
+
+cdef inf = np.inf 
+cdef pi = np.pi
+
+cdef extern from "numpy/arrayobject.h":
+    ctypedef struct PyArrayIterObject: 
+        np.npy_intp strides[np.NPY_MAXDIMS]
+        
+#endmacro 
