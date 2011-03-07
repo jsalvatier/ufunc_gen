@@ -13,7 +13,7 @@ __all__ = ['generate_ufuncs','UFuncDefinition','NumpyVarDefinition']
 env = Environment(loader=PackageLoader('ufunc_gen', 'templates'), line_statement_prefix = '#', undefined = DebugUndefined)
 
 def generate_ufuncs(file, function_definitions, includes = []): 
-    template = env.get_template('function_file.pxy')
+    template = env.get_template('function_file.pyx')
     context = {'functions' : flatten(function_definitions),
                'includes' : includes}
     
@@ -51,7 +51,7 @@ python_identifier = '[_A-Za-z][_A-Za-z1-9]*'
 def replace_var_identifiers(code, vars):
     vardict = {}
     for var in vars:
-        vardict[var.name ] = var.e_name
+        vardict[var.name ] = var.e_name 
     
     #if a python identifier is in the dict of variables, replace it with the e_name otherwise do nothing
     return re.sub(python_identifier, lambda s: vardict.get(s.group(0), s.group(0)), code)
